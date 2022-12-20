@@ -1,0 +1,50 @@
+Final model - GradientBoostingRegressor:
+
+ - Features:
+   - Median house value: Median house value for households within a block
+   - Median income (adj): Median income for households within a block of houses (in US dollars)
+     - Originally in thousands of US dollars
+   - Median age: Median age of a house within a block; a lower number is a newer building
+   - Total rooms: Total number of rooms within a block
+   - Total bedrooms: Total number of bedrooms within a block
+   - Population: Total number of people residing within a block
+   - Households: Total number of households, a group of people residing within a home unit, for a block
+   - Latitude: A measure of how far north a house is; a higher value is farther north
+   - Longitude: A measure of how far west a house is; a higher value is farther west
+   - Distance to coast (adj): Distance to the nearest coast point (in miles)
+     - Originally in meters
+   - Distance to Los Angeles (adj): Distance to the centre of Los Angeles (in miles)
+     - Originally in meters
+   - Distance to San Diego (adj): Distance to the centre of San Diego (in miles)
+     - Originally in meters
+   - Distance to San Jose (adj): Distance to the centre of San Jose (in miles)
+     - Originally in meters
+   - Distance to San Francisco (adj): Distance to the centre of San Francisco (in miles)
+     - Originally in meters
+
+ - Parameters:
+   - max_depth = 8
+   - random_state = 42
+   - All else default:
+     - loss = 'squared_error'
+     - learning_rate = 0.1
+     - n_estimators = 100
+     - subsample = 1.0
+     - criterion = 'friedman_mse'
+     - min_samples_split = 2
+     - min_samples_leaf = 1
+     - min_weight_fraction_leaf = 0.0
+     - min_impurity_decrease = 0.0
+     - init = None
+     - max_features = None
+     - alpha = 0.9
+     - verbose = 0
+     - max_leaf_nodes = None
+     - warm_start = False
+     - validation_fraction = 0.1
+     - n_iter_no_change = None
+     - tol = 0.0001
+     - ccp_alpha = 0.0
+
+ - Performance metrics:
+   - RMSE = 42447.13
